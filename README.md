@@ -70,6 +70,17 @@ No production deployment, secret migration, or database modification is part of 
 
 ## Contributing
 
+### Jekyll dependencies
+
+Use the Ruby version in `.ruby-version`, then run `bundle install` from the
+repository root. Netlify uses `bundle exec jekyll build` and publishes `_site`.
+Keep `Gemfile.lock` updated when changing dependencies so deployments use the
+same resolved versions.
+
+`_site/` is reserved for generated output and is ignored by Git. The older HTML
+snapshot previously stored at that path is preserved in
+`_archive/landing-page.html`; Jekyll excludes underscore-prefixed source folders.
+
 Make changes on a branch and submit a pull request. Preserve source links, licensing, and attribution. Never commit credentials, populated environment files, or secrets.
 
 - **Machine-readable repository inventory:** [ecosystem/repositories.json](ecosystem/repositories.json)
