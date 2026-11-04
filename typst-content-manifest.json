@@ -1,0 +1,11 @@
+{
+  "task_kind": "new-document",
+  "output": "pdf",
+  "signals": ["brand-guidelines", "visual-identity-manual"],
+  "hard_constraints": ["Vietnamese language", "professional tech brand layout", "use supplied logo asset"],
+  "content_features": {
+    "code_blocks": 0,
+    "defined_terms": 12,
+    "portrait_images": 1
+  }
+}
